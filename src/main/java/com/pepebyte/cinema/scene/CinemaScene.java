@@ -14,7 +14,7 @@ public class CinemaScene implements Scene2D{
         this.rows = rows;
         this.columns = columns;
         this.places = new Place[rows][columns];
-        Arrays.stream(places).forEach(arr->Arrays.fill(arr, Place.Free));
+        Arrays.stream(places).forEach(arr->Arrays.fill(arr, Place.FREE));
     }
 
     @Override
@@ -28,8 +28,8 @@ public class CinemaScene implements Scene2D{
     }
 
     @Override
-    public void setPlaces(int i, int j) {
-        this.places[i][j] = Place.Busy;
+    public void setPlace(int i, int j) {
+        this.places[i][j] = Place.BUSY;
 
     }
 

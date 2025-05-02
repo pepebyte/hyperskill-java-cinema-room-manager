@@ -1,8 +1,8 @@
 package com.pepebyte.cinema.scene;
 
 public enum Place {
-    Free("S"),
-    Busy("B");
+    FREE("S"),
+    BUSY("B");
 
     public final String sign;
 
